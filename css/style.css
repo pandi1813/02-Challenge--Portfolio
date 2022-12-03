@@ -84,15 +84,15 @@ main {
 main img {
   max-width: 100%;
   border-radius: 2%;
-  border: solid 10px var(--mid-color-1) ;
+  border: solid 10px var(--mid-color-1);
 }
 
-.project-img {
+.project-img-link {
   filter: grayscale(100%); 
   
 }
 
-.project-img:hover {
+.project-img-link:hover {
   filter: grayscale(0%);
 }
 
@@ -158,4 +158,16 @@ figure {
 
 p {
   margin: 0;
+}
+
+
+@media only screen and (max-width: 800px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  /* section:nth-child(-n + 2) {
+    position: absolute;
+    left: 25%;
+  } */
 }

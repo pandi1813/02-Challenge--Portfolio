@@ -1,0 +1,133 @@
+:root {
+  --dark-color: #280003;
+  --light-color: #EEE0CB;
+  --mid-color-1: #C2847A;
+  --mid-color-2: #848586;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+  background-color: var(--light-color);
+}
+
+
+/* Header */
+
+header > div {
+
+  margin: 0;
+}
+header h1 {
+  background-color: var(--dark-color);
+  width: 100%;
+  color: var(--light-color);
+  padding: 10px 2%;
+  /* position: relative;
+  top: 0;
+  left: 0; */
+} 
+
+header img {
+  width: 15%;
+  position: relative;
+  left: 2%;
+}
+
+nav ul {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  list-style-type: none;
+  background-color: var(--dark-color);
+  margin: 0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+nav ul li {
+  margin: 0 10px;
+
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--light-color);
+  border-radius: 4px;
+  padding: 5px;
+}
+nav a:hover {
+  background-color: var(--mid-color-1);
+  color: var(--dark-color);
+}
+
+
+
+/* MAIN */
+
+main {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  gap: 5% 0;
+  margin: 0 5%;
+}
+
+main img {
+  max-width: 100%;
+  border-radius: 2%;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/* projects grid */
+
+.project-examples {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2%;
+  grid-template-areas: 
+  "project-2 project-2"
+  "project-1 project-3"
+  "project-4 project-5";
+}
+
+#project-1 {
+  grid-area: project-1;
+}
+#project-2 {
+  grid-area: project-2;
+}
+#project-3 {
+  grid-area: project-3;
+}
+#project-4 {
+  grid-area: project-4;
+}
+#project-5 {
+  grid-area: project-5;
+}
+
+p {
+  margin: 0;
+}

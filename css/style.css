@@ -166,8 +166,13 @@ p {
     display: grid;
     grid-template-columns: 1fr;
   }
-  /* section:nth-child(-n + 2) {
+
+  section:nth-child(-n + 2) {
     position: absolute;
     left: 25%;
-  } */
+  }
+
+  section:first-of-type {
+    bottom: 530px;
+  }
 }

@@ -84,14 +84,27 @@ main {
 main img {
   max-width: 100%;
   border-radius: 2%;
+  border: solid 10px var(--mid-color-1) ;
 }
 
 .project-img {
-  filter: grayscale(100%);
+  filter: grayscale(100%); 
+  
 }
 
 .project-img:hover {
   filter: grayscale(0%);
+}
+
+figcaption {
+  display: inline-block;
+  position: relative;
+  bottom: 7vw;
+  background-color: var(--mid-color-1);
+  font-size: 3vw;
+  padding: 0 2vw;
+  border-radius: 0 10% 10% 0;;
+  color: var(--dark-color);
 }
 
 h2 {
@@ -140,15 +153,7 @@ figure {
   padding: 0;
 }
 
-figcaption {
-  display: inline-block;
-  position: relative;
-  bottom: 7vw;
-  background-color: var(--mid-color-1);
-  font-size: 3vw;
-  padding: 0 2vw;
-  border-radius: 0 10% 10% 0;
-}
+
 
 
 p {

@@ -31,9 +31,7 @@ header h1 {
   width: 100%;
   color: var(--light-color);
   padding: 10px 2%;
-  /* position: relative;
-  top: 0;
-  left: 0; */
+  font-size: 3rem;
 } 
 
 header img {
@@ -52,6 +50,7 @@ nav ul {
   margin: 0;
   padding: 5px;
   border-radius: 5px;
+  z-index: 4;
 }
 
 nav ul li {
@@ -64,6 +63,7 @@ nav a {
   color: var(--light-color);
   border-radius: 4px;
   padding: 5px;
+  font-size: 1.5rem;
 }
 nav a:hover {
   background-color: var(--mid-color-1);
@@ -84,6 +84,14 @@ main {
 main img {
   max-width: 100%;
   border-radius: 2%;
+}
+
+.project-img {
+  filter: grayscale(100%);
+}
+
+.project-img:hover {
+  filter: grayscale(0%);
 }
 
 h2 {
@@ -127,6 +135,21 @@ h6 {
 #project-5 {
   grid-area: project-5;
 }
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+figcaption {
+  display: inline-block;
+  position: relative;
+  bottom: 7vw;
+  background-color: var(--mid-color-1);
+  font-size: 3vw;
+  padding: 0 2vw;
+  border-radius: 0 10% 10% 0;
+}
+
 
 p {
   margin: 0;

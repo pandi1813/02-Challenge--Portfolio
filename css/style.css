@@ -153,9 +153,6 @@ figure {
   padding: 0;
 }
 
-.contact {
-  
-}
 
 .contact-img {
   border: none;
@@ -204,8 +201,19 @@ p {
 
 @media only screen and (max-width: 700px) {
   
-nav ul {
-  flex-direction: column;
+header h1 {
+  padding-top: 30px;
+}
+section:first-of-type {
+  top: 110px;
+}
+
+section:nth-of-type(2) {
+  top: 160px;
+}
+
+section:nth-of-type(3) {
+  margin-top: 120px;
 }
 
 }

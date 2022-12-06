@@ -1,3 +1,18 @@
+/* Table of content
+    1. Variables
+    2. General rules
+    3. Header
+    4. Main
+      4.2 Projects grid
+    5. Media queries
+
+*/
+
+
+
+
+
+/* 1. Variables */
 :root {
   --dark-color: #280003;
   --light-color: #EEE0CB;
@@ -5,7 +20,7 @@
   --mid-color-2: #848586;
 }
 
-
+/* 2. General rules */
 * {
   box-sizing: border-box;
 }
@@ -20,12 +35,8 @@ body {
 }
 
 
-/* Header */
+/* 3. Header */
 
-header > div {
-
-  margin: 0;
-}
 header h1 {
   background-color: var(--dark-color);
   width: 100%;
@@ -72,10 +83,10 @@ nav a:hover {
 
 
 
-/* MAIN */
+/* 4. MAIN */
 
 main {
-  display: grid;
+  display: grid; /* This is tha main grid container */
   grid-template-columns: 25% 75%;
   gap: 5% 0;
   margin: 0 5%;
@@ -121,7 +132,7 @@ h6 {
   margin: 0;
 }
 
-/* projects grid */
+/* 4.2 projects grid */
 
 .project-examples {
   display: grid;
@@ -162,12 +173,11 @@ figure {
 
 
 
-p {
-  margin: 0;
-}
-
+/* 5. Media queries */
 
 @media only screen and (max-width: 880px) {
+/* larger tablets */
+
   main {
     display: grid;
     grid-template-columns: 1fr;
@@ -200,7 +210,8 @@ p {
 
 
 @media only screen and (max-width: 700px) {
-  
+  /* small tablets */
+
 header h1 {
   padding-top: 30px;
 }
@@ -219,10 +230,13 @@ section:nth-of-type(3) {
 }
 
 
+
+
+
 @media only screen and (max-width: 500px) {
-  
+  /* mobile phones */
+
   section:nth-of-type(3) { 
-    /* targets 'My Project' heading */
     margin-top: 230px;
   }
 
